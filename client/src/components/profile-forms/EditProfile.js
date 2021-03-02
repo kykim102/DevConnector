@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { Fragment, useState, useEffect } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -56,7 +55,8 @@ const EditProfile = ({
 					loading || !profile.social ? '' : profile.social.instagram,
 			});
 		},
-		[ loading ]
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+		[ loading, getCurrentProfile ]
 	);
 
 	const {

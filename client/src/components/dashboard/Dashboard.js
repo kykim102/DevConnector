@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -15,9 +14,12 @@ const Dashboard = ({
 	auth: { user },
 	profile: { profile, loading },
 }) => {
-	useEffect(() => {
-		getCurrentProfile();
-	}, []);
+	useEffect(
+		() => {
+			getCurrentProfile();
+		},
+		[ getCurrentProfile ]
+	);
 
 	return loading && profile === null ? (
 		<Spinner />
