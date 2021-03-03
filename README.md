@@ -10,8 +10,7 @@ This is a MERN stack application created by following the instruction from the "
 
 ### Deployed on Heroku
 
-[DevConnector](https://whispering-basin-61873.herokuapp.com/dashboard)
-Follow above link to view the website.
+Follow the link to view the website. [DevConnector](https://whispering-basin-61873.herokuapp.com/dashboard)
 
 ### Author
 
